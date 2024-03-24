@@ -6,22 +6,72 @@
     <title>Kirei Nectar</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <style></style>
-  <body>
-    <div class="w-full flex justify-center h-screen overflow-auto bg-violet-100">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+    * {
+      font-family: "Lobster", sans-serif;
+    }
+    .bg-knect {
+      background-color: rgba(61, 48, 162, 0.6);
+      /* background-color: #3d30a2; */
+    }
+    .bg-img {
+      background-image: url(bg.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+    .f-knect {
+      color: #3d30a2;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #3d30a2;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #ada4f1;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7166c9;
+    }
+
+    .knect-btn {
+      background-color: white;
+      padding: 6px;
+      font-size: 30px;
+      border-radius: 16px;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .knect-btn:hover {
+      background-color: #3d30a2;
+      color: white;
+      outline: 2px solid white;
+      outline-offset: -2px;
+    }
+  </style>
+  <body style="background-color: #270c64">
+    <div class="w-full flex justify-center h-screen overflow-auto bg-img">
       <div
-        class="content w-full flex items-center flex-col overflow-auto gap-5 py-16 px-8 bg-gradient-to-t from-violet-950 to-violet-800"
+        class="content w-full flex items-center flex-col overflow-auto gap-5 py-16 px-8 bg-knect border-white border-r-2 border-l-2"
         style="max-width: 412px"
       >
-        <img src="Instagram post - 3.png" alt="" width="300" class="rounded-full border-solid border-4 border-white" />
+        <img src="knect.svg" loading="lazy" alt="" width="300" class="rounded-full border-solid border-4 border-white" />
         <div class="text-5xl w-full text-center mb-8 font-bold text-white">Kirei Nectar</div>
 
-        <a href="https://www.instagram.com/kireinectar/" class="link rounded-xl bg-white py-5 text-center w-full h-fit text-5xl font-bold text-violet-900"
-          >Instagram</a
-        >
-        <a href="" class="link rounded-xl bg-white py-5 text-center w-full h-fit text-5xl font-bold text-violet-900">Facebook</a>
-        <a href="" class="link rounded-xl bg-white py-5 text-center w-full h-fit text-5xl font-bold text-violet-900">Shopper</a>
-        <a href="" class="link rounded-xl bg-white py-5 text-center w-full h-fit text-5xl font-bold text-violet-900">Tiktok</a>
+        <a href="https://www.instagram.com/kireinectar/" class="knect-btn f-knect">Instagram</a>
+        <a href="" class="knect-btn f-knect">Facebook</a>
+        <a href="" class="knect-btn f-knect">Shopee</a>
+        <a href="" class="knect-btn f-knect">Tokopedia</a>
       </div>
     </div>
   </body>
